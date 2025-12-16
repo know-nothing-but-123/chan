@@ -3,12 +3,18 @@ from typing import Literal
 
 
 class DATA_SRC(Enum):
+    """
+    数据来源
+    """
     BAO_STOCK = auto()
     CCXT = auto()
     CSV = auto()
 
 
 class KL_TYPE(Enum):
+    """
+    k线类型
+    """
     K_1M = auto()
     K_DAY = auto()
     K_WEEK = auto()
@@ -23,6 +29,9 @@ class KL_TYPE(Enum):
 
 
 class KLINE_DIR(Enum):
+    """
+    k线方向
+    """
     UP = auto()
     DOWN = auto()
     COMBINE = auto()
@@ -30,17 +39,26 @@ class KLINE_DIR(Enum):
 
 
 class FX_TYPE(Enum):
+    """
+    分型类型
+    """
     BOTTOM = auto()
     TOP = auto()
     UNKNOWN = auto()
 
 
 class BI_DIR(Enum):
+    """
+    笔方向
+    """
     UP = auto()
     DOWN = auto()
 
 
 class BI_TYPE(Enum):
+    """
+    笔类型
+    """
     UNKNOWN = auto()
     STRICT = auto()
     SUB_VALUE = auto()  # 次高低点成笔
